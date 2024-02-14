@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will you be my valentine?</title>
     <link href="./output.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/love-2" rel="stylesheet">
+
+    <link rel="preload" href="https://media1.tenor.com/m/yEg23XVd13EAAAAC/credits-to-milkmochabear-milk-and-mocha.gif" as="image">
+    <link rel="preload" href="https://media1.tenor.com/m/Glql1LPSciQAAAAC/milk-and-mocha-milk-mocha.gif" as="image">
+    <link rel="preload" href="https://media1.tenor.com/m/jqTkEH8qWoEAAAAC/credits-to-milkmochabear-showered-with-love.gif" as="image">
+    <link rel="preload" href="https://media1.tenor.com/m/5p7fJz0eWUAAAAAC/cute-adorable.gif" as="image">
+
+    <style>
+        @font-face {
+        font-family: 'Love';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Love'), url('/dist/Love.woff') format('woff');
+}
+    </style>
 </head>
-<body class="h-screen w-screen flex justify-center items-center flex-col" style="background-image: url(./background.png); font-family: LOVE;">
+<body class="h-screen w-screen flex justify-center items-center flex-col" style="background-image: url(./background.png); font-family: Love, sans-serif;">
 
     <!-- Asking for valentine section starts -->
     <div id="main-card" class="w-[400px] h-[400px] flex justify-center items-center flex-col">
         <img id="main-image" src="https://media.tenor.com/pj-WvOM7W2oAAAAi/mocha-and.gif" alt="" class="rounded-lg w-[300px] shadow-xl">
-        <h3 id="main-heading" class="text-[25px] m-2">Will you be my valentine?🥺</h3>
+        <h3 id="main-heading" class="text-[25px] m-2 text-center">Will you be my valentine?🥺</h3>
 
         <div class="flex justify-center items-center">
             <button id="yes" class="h-10 w-16 mr-5 rounded-md bg-pink-400 hover:bg-pink-500 shadow-xl" onclick="yesBtnClick()">Yes</button>

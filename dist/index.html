@@ -6,7 +6,19 @@
     <title>Will you be my valentine?</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body class="h-screen w-screen flex justify-center items-center" style="background-image: url(/assets/background.png); font-family: love;">
     
+    <div id="main-card" class="w-[400px] h-[400px] flex justify-center items-center flex-col">
+        <img src="https://media.tenor.com/pj-WvOM7W2oAAAAi/mocha-and.gif" alt="" class="rounded-lg w-[300px]">
+        <h3 class="text-[25px] m-2">Will you be my valentine?🥺</h3>
+
+        <div class="flex justify-center items-center">
+            <button id="yes" class="h-10 w-16 mr-5 rounded-md bg-pink-400" onclick="yesBtnClick()">Yes</button>
+            <button id="no" class="h-10 w-16 ml-5 rounded-md opacity-10">No</button>
+        </div>
+
+    </div>
+
+    <script src="/dist/script.js"></script>
 </body>
 </html>

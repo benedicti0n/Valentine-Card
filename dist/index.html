@@ -7,32 +7,31 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="h-screen w-screen flex justify-center items-center flex-col" style="background-image: url(/assets/background.png); font-family: love;">
-    
+
+    <!-- Asking for valentine section starts -->
     <div id="main-card" class="w-[400px] h-[400px] flex justify-center items-center flex-col">
-        <img src="https://media.tenor.com/pj-WvOM7W2oAAAAi/mocha-and.gif" alt="" class="rounded-lg w-[300px]">
-        <h3 class="text-[25px] m-2">Will you be my valentine?🥺</h3>
+        <img id="main-image" src="https://media.tenor.com/pj-WvOM7W2oAAAAi/mocha-and.gif" alt="" class="rounded-lg w-[300px] shadow-xl">
+        <h3 id="main-heading" class="text-[25px] m-2">Will you be my valentine?🥺</h3>
 
         <div class="flex justify-center items-center">
-            <button id="yes" class="h-10 w-16 mr-5 rounded-md bg-pink-400 hover:bg-pink-500" onclick="yesBtnClick()">Yes</button>
-            <button id="no" class="h-10 w-16 ml-5 rounded-md bg-slate-400 hover:bg-slate-500">No</button>
+            <button id="yes" class="h-10 w-16 mr-5 rounded-md bg-pink-400 hover:bg-pink-500 shadow-xl" onclick="yesBtnClick()">Yes</button>
+            <button id="no" onclick="noBtnClick()" class="h-10 w-16 ml-5 rounded-md bg-slate-400 hover:bg-slate-500 shadow-xl">No</button>
         </div>
-
     </div>
+    <!-- Asking for valentine section ends -->
 
+    <!-- Yes card section starts-->
     <div id="yes-card" class="w-[400px] h-[400px] flex justify-center items-center flex-col hidden">
-        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWNuMmZid2liazdzOXhud3U1ZHY0M2hucjd5Z2J2M25ndHJrMmpzdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzXiddo2twMmdmU8Lv/giphy.gif" alt="" class="rounded-lg w-[350px]">
-        <h3 class="text-[40px] m-2">Yayyyyy 🥹💝</h3>
-
-        <!-- <div class="flex justify-center items-center">
-            <button id="yes" class="h-10 w-16 mr-5 rounded-md bg-pink-400" onclick="yesBtnClick()">Yes</button>
-            <button id="no" class="h-10 w-16 ml-5 rounded-md opacity-10">No</button>
-        </div> -->
-
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWNuMmZid2liazdzOXhud3U1ZHY0M2hucjd5Z2J2M25ndHJrMmpzdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzXiddo2twMmdmU8Lv/giphy.gif" alt="" class="rounded-lg w-[350px] shadow-lg">
+        <h3 class="text-[40px] m-2 text-center">Yayyyyy Love you🥹💝</h3>
     </div>
+    <!-- Yes card section ends-->
 
+    <!-- Footer starts -->
     <footer class="h-4 w-full fixed bottom-0 text-right m-3">
         Made with Bhalobasa - Benediction🐼
     </footer>
+    <!-- Footer ends -->
 
     <script src="/dist/script.js"></script>
 </body>
